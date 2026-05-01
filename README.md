@@ -70,5 +70,7 @@ python podcast_builder.py
 - The podcast is available on Spotify:
 
   https://open.spotify.com/show/0A2BQFnST68rB6yBZPqexU?si=E-CAr235QymQydO1w930eA
-  <img width="573" height="439" alt="image" src="https://github.com/user-attachments/assets/bec2d9c0-56ba-44dd-8a05-f80b518d9d3e" />
+
+  <img width="573" height="407" alt="image" src="https://github.com/user-attachments/assets/542d80cb-c4c9-4716-8f95-f7607c108027" />
+
 
