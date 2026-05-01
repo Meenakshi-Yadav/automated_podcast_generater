@@ -62,8 +62,3 @@ python podcast_builder.py
 - Change `voice_id` or `model_id` inside `script_to_mp3()` to use different ElevenLabs voices or models.
 - Update the prompt in `generate_script()` to adjust podcast structure, vocabulary flags, or question style.
 - If you want to process the latest AEON essay automatically, you can reuse `get_latest_aeon_essay()` by modifying `main()`.
-
-## Notes
-
-- This README focuses on ElevenLabs integration, but the script also relies on a local Ollama instance for text generation.
-- Keep your ElevenLabs API key secure and do not commit `.env` to source control.
