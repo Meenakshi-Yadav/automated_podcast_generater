@@ -1,11 +1,13 @@
-# automated_podcast_generater
-Python project that extracts the latest Aeon essay and converts it into an AI‑generated podcast.
-This repository contains `podcast_builder.py`, a script that fetches AEON essays, generates a CAT-prep podcast script using a local Ollama model, and converts the final script into speech using the ElevenLabs API.
+# Automated Podcast Generator
+
+AI-powered project that scrapes Aeon essays and generates interactive comprehension podcasts—combining text-to-speech, vocabulary explanations, and multiple-choice quizzes to enhance listener learning.
+This repository contains `podcast_builder.py`, a script that fetches AEON essays, generates a podcast script using a local Ollama model, and converts the final script into speech using the ElevenLabs API.
 
 ## Overview
 
 - `podcast_builder.py`: Main pipeline for essay scraping, script generation, and TTS conversion.
-- `script.txt`: Output file containing the generated podcast script.
+- `ExamplerPodcastScriptgenerated.txt`: Output file containing the generated podcast script.
+- `examplerPodcastgenerated1.mp3`: Output file containing the generated podcast audio.
 
 ## ElevenLabs API Usage
 
@@ -40,7 +42,7 @@ pip install requests beautifulsoup4 python-dotenv elevenlabs
 
 - The script uses `elevenlabs._text_to_speech.convert()`. If the ElevenLabs SDK is updated, verify the client interface and update the call accordingly.
 - The current chunk size target is `4500` characters. This can be adjusted in `split_text()` if your scripts are longer or shorter.
-- The merged MP3 file is produced by concatenating bytes from each chunk file. This works for simple MP3 outputs, but if you need a more robust merge, consider using an audio library like `pydub`.
+- The merged MP3 file is produced by concatenating bytes from each chunk file. 
 
 ## Running the script
 
@@ -62,3 +64,11 @@ python podcast_builder.py
 - Change `voice_id` or `model_id` inside `script_to_mp3()` to use different ElevenLabs voices or models.
 - Update the prompt in `generate_script()` to adjust podcast structure, vocabulary flags, or question style.
 - If you want to process the latest AEON essay automatically, you can reuse `get_latest_aeon_essay()` by modifying `main()`.
+
+## Published Podcast
+
+- The podcast is available on Spotify:
+
+  https://open.spotify.com/show/0A2BQFnST68rB6yBZPqexU?si=E-CAr235QymQydO1w930eA
+  <img width="573" height="439" alt="image" src="https://github.com/user-attachments/assets/bec2d9c0-56ba-44dd-8a05-f80b518d9d3e" />
+
